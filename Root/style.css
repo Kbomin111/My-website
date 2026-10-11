@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'KerisKedyuche';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-3@1.0/KERISKEDU_R.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}/*font style from other site for my title.*/
+
+@font-face {
+    font-family: 'Cafe24Surround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}/*font style from other site for my 'a tag'.*/
+
+#container{
+	background-color:#FFECB3;
+	border: 2px solid #99795C;
+	border-radius:20px;
+}
+#header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+h1{
+	font-family:KerisKedyuche;
+	font-size:60px;
+	color:#99795C;
+	
+	}
+
+#content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top:30px;
+}
+
+#menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap:20px;
+}
+
+#homecont{
+	width:1000px;
+	height:1200px;
+	border-radius:20px;
+	background-color:#fff3ca;
+	padding-top:10px;
+}
+
+#intro{
+	display:grid;
+	grid-template-rows: repeat(2, 100px);
+	grid-template-columns: repeat(1, 1fr);
+}
+
+#sentence{
+	font-size: 20px;
+	color:#987e5d;
+	margin-left:20px;
+	margin-top:30px;
+	text-align:center;
+}
+
+a{
+	font-size:20px;
+	font-family:Cafe24Surround;
+}
+a:link { color: #C5a67E; text-decoration: none; }
+a:visited { color: #C5a67E; text-decoration: none; }
+
+
+#footer{
+	background-color:#fff9e6;
+	padding:10px;
+	border-radius:20px;
+}
+
+/* Home page introduction */
+#intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+#intro_texts {
+    text-align: left;
+}
+
+.intro-text {
+    font-family: Cafe24Surround;
+    font-size: 20px;
+    color: #6f523d;
+    margin: 12px;
+}
+
+
+/* Snack photos */
+#snackphotos {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#snackphotos img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 2px 2px 5px #b89a7a;
+    transform: rotate(3deg);
+}
+
+#snackphotos img:nth-child(2) {
+    transform: rotate(-4deg);
+}
+
+#snackphotos img:nth-child(3) {
+    transform: rotate(2deg);
+}
+
+
+/* Section titles */
+.section-title {
+    font-family: Cafe24Surround;
+    font-size: 28px;
+    color: #76553c;
+    text-align: center;
+    margin: 25px;
+}
+
+
+/* Countries */
+#countries {
+    margin-top: 20px;
+    padding: 15px;
+}
+
+#country-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.country {
+    background-color: #fff8df;
+    border: 2px solid #d7b88e;
+    border-radius: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-family: Cafe24Surround;
+    color: #76553c;
+}
+
+.flag {
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+
+/* Top 3 snacks */
+#top3 {
+    margin-top: 20px;
+}
+
+#snack-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* Individual snack card */
+.snack-card {
+    width: 270px;
+    background-color: #fff9e8;
+    border: 2px solid #dfc18e;
+    border-radius: 15px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.snack-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.rank {
+    position: absolute;
+    top: -12px;
+    left: -8px;
+    background-color: #d7b276;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    font-family: Cafe24Surround;
+    color: white;
+}
+
+.snack-info h2 {
+    font-family: Cafe24Surround;
+    font-size: 20px;
+    color: #76553c;
+    margin: 5px 0;
+}
+
+.snack-info p {
+    font-family: Cafe24Surround;
+    color: #76553c;
+    margin: 5px 0;
+}
+
+.score {
+    font-size: 16px;
+}
+
+
+/* Review button */
+#review-link {
+    margin: 35px auto;
+    padding: 20px;
+    width: 70%;
+    border: 2px dashed #c8a477;
+    border-radius: 15px;
+    text-align: center;
+    font-family: Cafe24Surround;
+    font-size: 20px;
+    color: #76553c;
+}
+
+#review-link a {
+    display: inline-block;
+    background-color: #98704f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
